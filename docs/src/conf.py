@@ -7,20 +7,12 @@ All configuration values have a default; values that are commented out
 serve to show the default.
 """
 
-import logging
 import shutil
 from pathlib import Path
 
 import alabaster
 
 from src import package
-
-# set up logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-)
-logger = logging.getLogger(__name__)
 
 
 # copy the examples directory to the docs/_examples directory
@@ -43,28 +35,21 @@ def copy_examples() -> None:
         for item in source_examples_dir.iterdir():
             if item.is_file():
                 shutil.copy2(item, dest_examples_dir)
-                logger.debug("Copied %s to %s", item.name, dest_examples_dir)
             elif item.is_dir():
                 shutil.copytree(item, dest_examples_dir / item.name)
-                logger.debug(
-                    "Copied directory %s to %s", item.name, dest_examples_dir,
-                )
     else:
-        logger.warning("Source examples directory %s does not exist",
-                       source_examples_dir)
+        msg = f"Source examples directory {source_examples_dir} does not exist"
+        raise FileNotFoundError(msg)
 
 
-def setup(app) -> None:
+def setup(app) -> None:  # noqa: ANN001, ARG001
     """Sphinx setup hook to copy examples before building."""
     copy_examples()
 
 
 __version__ = package.__version__
 
-# -- General configuration -----------------------------------------------------
-
-# Add any Sphinx extension module names here, as strings. They can be extensions
-# coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
+# --- general configuration ---
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.doctest",
@@ -84,30 +69,23 @@ extensions = [
 
 source_suffix = [".md"]
 master_doc = "index"
-
-# General information about the project.
 project = "package"
 copyright = "The package authors"  # noqa: A001
 version = ".".join(__version__.split(".")[:2])
 release = __version__
 
-# List of patterns, relative to source directory, that match files and
+# patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = []
 
-# The name of the Pygments (syntax highlighting) style to use.
+# name of the Pygments (syntax highlighting) style to use.
 pygments_style = "sphinx"
 
-
-# -- Options for HTML output ---------------------------------------------------
+# --- options for HTML output ---
 table_styling_embed_css = False
 html_theme_path = [alabaster.get_path(), "../themes"]
 extensions += ["alabaster"]
 html_theme = "sphinx_immaterial"
-
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
 html_theme_options = {
     "palette": {"scheme": "default"},
     "features": [
@@ -144,18 +122,10 @@ html_theme_options = {
     ],
 }
 
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
 html_logo = "_static/cvxlogo.png"
-
-# The name of an image file (within the static path) to use as favicon of the
-# docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
-# pixels large.
 html_favicon = "_static/favicon.ico"
 
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
+# paths that contain custom static files (such as style sheets)
 html_static_path = ["_static"]
 html_css_files = [
     "css/styling.css",
