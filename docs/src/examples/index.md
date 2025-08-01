@@ -1,6 +1,6 @@
 # Examples
 
-This page contains examples demonstrating the capabilities of CVXPYgen for code generation with CVXPY.
+This page contains examples demonstrating the capabilities of this package.
 
 ```{toctree}
 ---

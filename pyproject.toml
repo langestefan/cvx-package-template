@@ -3,13 +3,13 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "repository"
-version = "0.1.9"
+name = "package"
+version = "0.0.1"
 description = "My package description goes here."
 readme = "README.md"
 license = { text = "MIT" }
-authors = [{ name = "S. Boyd" }, { name = "S. Diamond" }]
-maintainers = [{ name = "Parth Nobel", email = "ptnobel@stanford.edu" }]
+authors = [{ name = "Author 1" }, { name = "Author 2" }]
+maintainers = [{ name = "My Name", email = "myname@place.com" }]
 requires-python = ">=3.10"
 dependencies = ["cvxpy>=1.7.1"]
 keywords = ["convex optimization", "cvxpy", "mathematical programming"]
@@ -68,7 +68,6 @@ doc = [
   "sphinx-autobuild>=2024.10.3",
   "nbsphinx >= 0.9.7",
 ]
-
 
 [tool.coverage.run]
 plugins = ["covdefaults"]
