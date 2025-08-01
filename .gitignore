@@ -70,6 +70,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+docs/src/_examples/
 
 # PyBuilder
 .pybuilder/
@@ -208,3 +209,4 @@ __marimo__/
 
 # uv
 uv.lock
+docs.old

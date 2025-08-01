@@ -1,6 +1,10 @@
 # Examples
 
-This page contains examples demonstrating the capabilities of this package.
+This page contains examples demonstrating the capabilities of CVXPYgen for code generation with CVXPY.
 
-The main example that demonstrates the basic workflow of this package can be found in
-[my_example.ipynb](../../examples/my_example.ipynb).
+```{toctree}
+---
+maxdepth: 2
+---
+../_examples/quadratic_program
+```
