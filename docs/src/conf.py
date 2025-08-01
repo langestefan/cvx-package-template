@@ -15,7 +15,6 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 
-import sphinx_rtd_theme  # type: ignore
 
 # -- Project information -----------------------------------------------------
 
@@ -61,23 +60,12 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # pygments_style = 'sphinx'
 pygments_style = "default"
 
-# html_sidebars = {
-#   '**': [
-#       'about.html', 'navigation.html', 'searchbox.html',
-#   ]
-# }
-
 # -- Options for HTML output -------------------------------------------------
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-
-# html_theme = 'alabaster'
 html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 
-def setup(app):
+def setup(app: object) -> None:
+    """Set up Sphinx extensions and static files."""
     app.add_css_file("css/theme.css")
 
 
