@@ -4,7 +4,7 @@ This page contains examples demonstrating the capabilities of this package.
 
 ```{toctree}
 ---
-maxdepth: 2
+maxdepth: 1
 ---
 ../_examples/quadratic_program
 ```

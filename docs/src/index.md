@@ -3,7 +3,7 @@ description: My package description goes here.
 keywords: convex optimization, open source, software
 ---
 
-# CVXPYgen: Code generation with CVXPY
+# My Package
 
 ```{toctree}
 :maxdepth: 1
@@ -17,6 +17,7 @@ contributing
 changelog
 faq
 resources
+citing
 ```
 
 ```{raw} html

@@ -2,8 +2,8 @@
 
 ## Quick Install
 
-Install CVXPYgen using pip:
+Install package using pip:
 
 ```bash
-pip install cvxpygen
+pip install package 
 ```
