@@ -59,8 +59,16 @@ nav.md-tabs li:hover{
 }
 
 .md-logo img{
-    height: 1.7rem !important;
+    height: 3.0rem !important;
+    border-radius: 1px !important;
+    margin: .0rem !important;
+    padding: .0rem !important;
 }
+a.md-header__button.md-logo{
+    margin: .0rem !important;
+    padding: .0rem !important;
+}
+
 
 @media only screen and (max-width: 75em){
     .md-nav__source{
