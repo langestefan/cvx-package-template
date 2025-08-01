@@ -122,7 +122,7 @@ html_theme_options = {
     ],
 }
 
-html_logo = "_static/cvxlogo.png"
+html_logo = "_static/cvxlogo-transparent.png"
 html_favicon = "_static/favicon.ico"
 
 # paths that contain custom static files (such as style sheets)
