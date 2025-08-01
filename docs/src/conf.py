@@ -73,7 +73,6 @@ html_logo = "_static/cvxlogo.png"
 html_favicon = "_static/favicon.ico"
 html_theme_options = {
     "logo_only": True,
-    "display_version": True,
     #'github_banner': True,
     #'github_user': 'cvxgrp',
     #'github_repo': '<repo>',

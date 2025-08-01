@@ -1,6 +1,4 @@
----
-title: Contributing
----
+# Contributing
 
 There are many ways you can contribute to repository, and we welcome all help!
 Here are some ideas (of varying difficulty):
