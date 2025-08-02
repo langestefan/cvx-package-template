@@ -8,11 +8,17 @@ serve to show the default.
 """
 
 import shutil
+import sys
 from pathlib import Path
 
 import alabaster
 
-from src import package
+# add the repository root to the Python path so we can import src.package
+docs_dir = Path(__file__).parent
+repo_root = docs_dir.parent.parent
+sys.path.insert(0, str(repo_root))
+
+from src import package  # noqa: E402
 
 
 # copy the examples directory to the docs/_examples directory
