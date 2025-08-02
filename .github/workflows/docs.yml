@@ -1,5 +1,4 @@
-# .github/workflows/doc_deploy.yml
-name: doc_deploy
+name: deploy-docs
 
 on:
   push:
@@ -30,12 +29,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0       # needed if you e.g. show git commit refs in docs
+          fetch-depth: 0  
 
       - uses: astral-sh/setup-uv@v4
         with:
           version: latest
           python-version: 3.12
+
+      - name: Install pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
 
       - name: Install deps and build Sphinx docs
         run: |
