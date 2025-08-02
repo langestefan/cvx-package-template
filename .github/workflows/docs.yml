@@ -44,6 +44,9 @@ jobs:
           uv sync --group doc
           uv run sphinx-build -W --keep-going -b html docs/src docs/_build/html
 
+      - name: Add .nojekyll file
+        run: touch docs/_build/html/.nojekyll
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
