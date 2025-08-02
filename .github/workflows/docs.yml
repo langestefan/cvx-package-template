@@ -2,13 +2,13 @@ name: deploy-docs
 
 on:
   push:
-    branches: [ main ]         # auto-rebuild when docs or code change
+    branches: [main] # auto-rebuild when docs or code change
     paths:
-      - 'docs/**'
-      - 'src/**'
-      - 'pyproject.toml'
-      - 'uv.lock'
-  workflow_dispatch:           # still allow manual runs
+      - "docs/**"
+      - "src/**"
+      - "pyproject.toml"
+      - "uv.lock"
+  workflow_dispatch: # still allow manual runs
 
 permissions:
   contents: read
@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  doc_deploy:
+  build:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -29,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  
+          fetch-depth: 0
 
       - uses: astral-sh/setup-uv@v4
         with:
@@ -55,6 +55,11 @@ jobs:
         with:
           path: docs/_build/html
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
