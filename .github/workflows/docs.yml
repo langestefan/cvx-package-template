@@ -2,13 +2,7 @@ name: deploy-docs
 
 on:
   push:
-    branches: [main] # auto-rebuild when docs or code change
-    paths:
-      - "docs/**"
-      - "src/**"
-      - "pyproject.toml"
-      - "uv.lock"
-  workflow_dispatch: # still allow manual runs
+  workflow_dispatch:
 
 permissions:
   contents: read
