@@ -70,7 +70,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-docs/src/_examples
+docs/src/examples/*.ipynb
 
 # PyBuilder
 .pybuilder/
