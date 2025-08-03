@@ -21,13 +21,17 @@ sys.path.insert(0, str(repo_root))
 from src import package  # noqa: E402
 
 
-# copy the examples directory to the docs/examples directory
+# copy the examples directory to the docs/_examples directory
 def copy_examples() -> None:
-    """Copy example notebooks from top-level examples/ to docs/src/examples/."""
+    """Copy example notebooks from top-level examples/ to docs/src/_examples/."""
     docs_dir = Path(__file__).parent  # docs/source/
     repo_root = docs_dir.parent.parent  # repo root
     source_examples_dir = repo_root / "examples"
-    dest_examples_dir = docs_dir / "examples"
+    dest_examples_dir = docs_dir / "_examples"
+
+    # stop moving if the destination directory already exists
+    if dest_examples_dir.exists():
+        return
 
     # create the destination directory
     dest_examples_dir.mkdir(exist_ok=True)
@@ -35,12 +39,6 @@ def copy_examples() -> None:
     # copy all files from source examples to destination
     if source_examples_dir.exists():
         for item in source_examples_dir.iterdir():
-            # dont move .toml files
-            if item.name.endswith(".toml"):
-                continue
-            # skip if the item already exists in the destination
-            if (dest_examples_dir / item.name).exists():
-                continue
             if item.is_file():
                 shutil.copy2(item, dest_examples_dir)
             elif item.is_dir():
@@ -113,7 +111,6 @@ html_theme_options = {
     ],
     "toc_title": "On this page",
     "repo_url": "https://github.com/cvxpy/cvxpy/",
-    "site_url": "/cvx-package-template/",
     "repo_name": "cvxpy",
     "icon": {
         "repo": "fontawesome/brands/github",
