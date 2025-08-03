@@ -6,5 +6,5 @@ This page contains examples demonstrating the capabilities of this package.
 ---
 maxdepth: 1
 ---
-../examples/quadratic_program
+../_examples/quadratic_program
 ```
