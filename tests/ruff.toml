@@ -10,4 +10,6 @@ lint.extend-ignore = [
     "SLF001",  # Tests will access private/protected members...
     "TC002",   # pytest doesn't like this one...
     "PLR0913", # tests should not have any parameter restrictions
+    "PLR2004", # magic values in tests are fine
+    "PGH003",  # unspecific ignores are fine in tests
 ]
