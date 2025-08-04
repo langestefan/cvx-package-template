@@ -118,20 +118,20 @@ html_theme_options = {
         "announce.dismiss",
     ],
     "toc_title": "On this page",
-    "repo_url": "https://github.com/cvxpy/cvxpy/",
-    "repo_name": "cvxpy",
+    "repo_url": "https://github.com/langestefan/cvx-package-template",
+    "repo_name": "cvx-template",
     "icon": {
         "repo": "fontawesome/brands/github",
     },
     "social": [
         {
             "icon": "fontawesome/brands/github",
-            "link": "https://github.com/cvxpy/cvxpy/",
+            "link": "https://github.com/langestefan/cvx-package-template",
             "name": "Source on github.com",
         },
         {
             "icon": "fontawesome/brands/python",
-            "link": "https://github.com/cvxpy/cvxpy/",
+            "link": "https://github.com/langestefan/cvx-package-template",
         },
     ],
 }

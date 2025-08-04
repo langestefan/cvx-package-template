@@ -30,10 +30,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/cvxgrp/repository"
-Repository = "https://github.com/cvxgrp/repository.git"
-Documentation = "https://github.com/cvxgrp/repository"
-"Bug Tracker" = "https://github.com/cvxgrp/repository/issues"
+Homepage = "https://github.com/langestefan/cvx-package-template"
+Repository = "https://github.com/langestefan/cvx-package-template.git"
+Documentation = "https://github.com/langestefan/cvx-package-template"
+"Bug Tracker" = "https://github.com/langestefan/cvx-package-template/issues"
 
 [project.optional-dependencies]
 
