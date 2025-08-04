@@ -33,15 +33,15 @@ citing
 
 ```{raw} html
 <div style="text-align: center; margin: 20px 0;">
-  <a href="https://discord.gg/4urRQeGBCr" 
-     target="_blank" 
-     style="display: inline-block; 
-            background: linear-gradient(135deg, #5865F2, #7289DA); 
-            color: white; 
-            padding: 12px 24px; 
-            border-radius: 25px; 
-            text-decoration: none; 
-            font-weight: bold; 
+  <a href="https://discord.gg/4urRQeGBCr"
+     target="_blank"
+     style="display: inline-block;
+            background: linear-gradient(135deg, #5865F2, #7289DA);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
             box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
             transition: all 0.3s ease;
             border: none;

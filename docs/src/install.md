@@ -5,5 +5,5 @@
 Install package using pip:
 
 ```bash
-pip install package 
+pip install package
 ```

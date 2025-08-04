@@ -11,5 +11,3 @@ def test_hello() -> None:
     """
     out = hello_world(0)
     assert out == "string-0", "Expected output did not match"
-
-

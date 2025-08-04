@@ -10,14 +10,14 @@
 
 ## Template instructions (to be removed)
 
-This is a template for creating packages in the cvxpy ecosystem. It provides a basic 
+This is a template for creating packages in the cvxpy ecosystem. It provides a basic
 structure and configuration for a Python package, including:
 
 - A `pyproject.toml` file for package metadata and dependencies.
-- A `tests` directory for unit tests using `pytest` and `pytest-cov` for coverage 
+- A `tests` directory for unit tests using `pytest` and `pytest-cov` for coverage
 reporting.
 - A `docs` directory for documentation using Sphinx.
-- A `examples` directory for example usage of the package, which will be displayed in 
+- A `examples` directory for example usage of the package, which will be displayed in
 the documentation.
 - Linting and formatting using `ruff` and typechecking using `ty`.
 - Pre-commit hooks using `pre-commit` to ensure code quality before committing changes.
@@ -45,7 +45,7 @@ pytest tests
 
 ## Building documentation locally
 
-To build and run the documentation locally using `sphinx-autobuild`, 
+To build and run the documentation locally using `sphinx-autobuild`,
 you need to first install dependencies using the following commands:
 
 ```bash
