@@ -10,7 +10,7 @@ readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Author 1" }, { name = "Author 2" }]
 maintainers = [{ name = "My Name", email = "myname@place.com" }]
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = ["cvxpy>=1.7.1"]
 keywords = ["convex optimization", "cvxpy", "mathematical programming"]
 classifiers = [
@@ -20,8 +20,6 @@ classifiers = [
   "License :: OSI Approved :: Apache Software License",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
