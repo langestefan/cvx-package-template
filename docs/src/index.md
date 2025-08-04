@@ -11,7 +11,7 @@ keywords: convex optimization, open source, software
 
 install
 user-guide
-api-documentation
+api
 examples/index
 contributing
 changelog

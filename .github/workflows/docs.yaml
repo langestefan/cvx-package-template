@@ -33,9 +33,11 @@ jobs:
       - name: Install pandoc
         run: sudo apt-get update && sudo apt-get install -y pandoc
       - name: Install deps and build Sphinx docs
-        run: |
-          uv sync --group doc
-          uv run sphinx-build -W --keep-going -b html docs/src docs/_build/html
+        run: uv sync --group doc
+      - name: Generate API documentation
+        run: uv run sphinx-apidoc -f -o docs/src/api src/package
+      - name: Build Sphinx docs
+        run: uv run sphinx-build -W --keep-going -b html docs/src docs/_build/html
       - name: Add .nojekyll file
         run: touch docs/.nojekyll
       - name: Setup Pages
