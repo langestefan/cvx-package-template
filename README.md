@@ -1,9 +1,5 @@
 # cvx-package-template
 
-<h1 align="center" margin=0px>
-<img src="docs/src/_static/cvxlogo.png" alt="CVX logo" width="350">
-</h1>
-
 [![Build Status](https://github.com/langestefan/cvx-package-template/actions/workflows/build.yml/badge.svg)](https://github.com/langestefan/cvx-package-template/actions/workflows/build.yml)
 [![Documentation](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://www.cvxgrp.org/repository/)
 [![Coverage Status](https://coveralls.io/repos/github/langestefan/cvx-package-template/badge.svg?branch=master)](https://coveralls.io/github/langestefan/cvx-package-template?branch=master)
