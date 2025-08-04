@@ -1,6 +1,6 @@
 # cvx-package-template
 
-[![Build Status](https://github.com/langestefan/cvx-package-template/actions/workflows/build.yaml/badge.svg)](https://github.com/langestefan/cvx-package-template/actions/workflows/build.yml)
+[![Build Status](https://github.com/langestefan/cvx-package-template/actions/workflows/release.yaml/badge.svg)](https://github.com/langestefan/cvx-package-template/actions/workflows/build.yml)
 [![Documentation](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://www.cvxgrp.org/repository/)
 [![Coverage Status](https://coveralls.io/repos/github/langestefan/cvx-package-template/badge.svg?branch=master)](https://coveralls.io/github/langestefan/cvx-package-template?branch=master)
 
