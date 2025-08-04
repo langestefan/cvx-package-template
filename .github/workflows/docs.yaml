@@ -1,7 +1,8 @@
+---
 name: deploy-docs
 
 on:
-  push:
+  push: {}
   workflow_dispatch:
 
 permissions:
@@ -35,7 +36,8 @@ jobs:
       - name: Install deps and build Sphinx docs
         run: uv sync --group doc
       - name: Build Sphinx docs
-        run: uv run sphinx-build -W --keep-going -b html docs/src docs/_build/html
+        run: >
+          uv run sphinx-build -W --keep-going -b html docs/src docs/_build/html
       - name: Add .nojekyll file
         run: touch docs/.nojekyll
       - name: Setup Pages

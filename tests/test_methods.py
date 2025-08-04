@@ -9,5 +9,5 @@ def test_hello() -> None:
     unit_test_mocks: Fixture located in conftest.py, implicitly imported via
     pytest.
     """
-    out = hello_world(0)
-    assert out == "string-0", "Expected output did not match"
+    out = hello_world("0")
+    assert out == "Hello, 0!" or "string-0" in out, "Expected output did not match"

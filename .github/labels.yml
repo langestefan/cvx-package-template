@@ -38,7 +38,7 @@
   description: "Issue is currently being resolved by a developer."
 - name: "stale"
   color: fef2c0
-  description: "There has not been activity on this issue or PR for quite some time."
+  description: "There has not been activity on this issue or PR for some time."
 - name: "no-stale"
   color: fef2c0
   description: "This issue or PR is exempted from the stable bot."
@@ -67,10 +67,10 @@
 
 - name: "beginner-friendly"
   color: 0e8a16
-  description: "Good first issue for people wanting to contribute to the project."
+  description: "Good first issue for people wanting to contribute."
 - name: "help-wanted"
   color: 0e8a16
-  description: "We need some extra helping hands or expertise in order to resolve this."
+  description: "We need extra helping hands or expertise to resolve this."
 
 - name: "hacktoberfest"
   description: "Issues/PRs are participating in the Hacktoberfest."
@@ -81,10 +81,10 @@
 
 - name: "priority-critical"
   color: ee0701
-  description: "This should be dealt with ASAP. Not fixing this issue would be a serious error."
+  description: "This should be dealt with ASAP. Not fixing would be serious."
 - name: "priority-high"
   color: b60205
-  description: "After critical issues are fixed, these should be dealt with before any further issues."
+  description: "After critical issues are fixed, these should be dealt with."
 - name: "priority-medium"
   color: 0e8a16
   description: "This issue may be useful, and needs some attention."

@@ -89,6 +89,7 @@ repos:
         types: [python]
         entry: uv run ty check
         require_serial: true
+        exclude: ^docs/
       - id: no-commit-to-branch
         name: 🛑 Don't commit to main branchpre-commit migrate-config
         language: system
@@ -102,6 +103,7 @@ repos:
         language: system
         types: [python]
         entry: uv run pylint
+        exclude: ^docs/
       - id: trailing-whitespace
         name: ✄  Trim Trailing Whitespace
         language: system

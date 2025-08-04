@@ -4,9 +4,9 @@
 <img src="docs/src/_static/cvxlogo.png" alt="CVX logo" width="350">
 </h1>
 
-[![Build Status](https://github.com/cvxgrp/respository/actions/workflows/build.yml/badge.svg)](https://github.com/cvxgrp/respository/actions/workflows/build.yml)
-[![Documentation](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://www.cvxgrp.org/respository/)
-[![Coverage Status](https://coveralls.io/repos/github/cvxgrp/respository/badge.svg?branch=master)](https://coveralls.io/github/cvxgrp/respository?branch=master)
+[![Build Status](https://github.com/cvxgrp/repository/actions/workflows/build.yml/badge.svg)](https://github.com/cvxgrp/repository/actions/workflows/build.yml)
+[![Documentation](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://www.cvxgrp.org/repository/)
+[![Coverage Status](https://coveralls.io/repos/github/cvxgrp/repository/badge.svg?branch=master)](https://coveralls.io/github/cvxgrp/repository?branch=master)
 
 ## Template instructions (to be removed)
 
@@ -62,6 +62,6 @@ sphinx-autobuild docs/src docs/_build/html
 
 ## Repository description goes here.
 
-The full documentation is available [here](https://www.cvxgrp.org/respository/).
+The full documentation is available [here](https://www.cvxgrp.org/repository/).
 
-If you wish to cite respository please cite the papers listed [here](https://www.cvxgrp.org/respository/citing).
+If you wish to cite repository please cite the papers listed [here](https://www.cvxgrp.org/repository/citing).
