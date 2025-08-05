@@ -1,8 +1,10 @@
 # cvx-package-template
 
-[![Build Status](https://github.com/langestefan/cvx-package-template/actions/workflows/release.yaml/badge.svg)](https://github.com/langestefan/cvx-package-template/actions/workflows/build.yml)
-[![Documentation](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://www.cvxgrp.org/repository/)
-[![Coverage Status](https://coveralls.io/repos/github/langestefan/cvx-package-template/badge.svg?branch=master)](https://coveralls.io/github/langestefan/cvx-package-template?branch=master)
+[![build](https://github.com/langestefan/cvx-package-template/actions/workflows/release.yaml/badge.svg)](https://github.com/langestefan/cvx-package-template/actions/workflows/build.yml)
+[![docs](https://img.shields.io/badge/docs-online-brightgreen?logo=read-the-docs&style=flat)](https://langestefan.github.io/cvx-package-template/)
+[![codecov](https://codecov.io/gh/langestefan/cvx-package-template/graph/badge.svg?token=WQKQEUOS8B)](https://codecov.io/gh/langestefan/cvx-package-template)
+[![license](https://img.shields.io/github/license/langestefan/cvx-package-template)](https://github.com/langestefan/cvx-package-template/blob/main/LICENSE)
+[![pypi](https://img.shields.io/pypi/v/cvx-package-template)](https://pypi.org/project/cvx-package-template/)
 
 ## Template instructions (to be removed)
 
