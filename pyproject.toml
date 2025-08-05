@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "package"
-version = "0.0.1"
-description = "My package description goes here."
+name = "cvx-package-template"
+version = "0.1.0"
+description = "CVX package template for convex optimization projects."
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Author 1" }, { name = "Author 2" }]
@@ -36,7 +36,7 @@ Documentation = "https://github.com/langestefan/cvx-package-template"
 [project.optional-dependencies]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/package"]
+packages = ["src/cvx_package_template"]
 
 [tool.hatch.build.targets.sdist]
 include = ["/src", "/examples", "/README.md", "/LICENSE", "/NOTICE"]
@@ -69,7 +69,7 @@ doc = [
 
 [tool.coverage.run]
 plugins = ["covdefaults"]
-source = ["package"]
+source = ["cvx_package_template"]
 
 [tool.coverage.report]
 show_missing = true
@@ -99,7 +99,7 @@ ignore-imports = true
 max-line-length = 88
 
 [tool.pytest.ini_options]
-addopts = "--cov-report xml:coverage.xml --cov src.package --cov-fail-under 0 --cov-append -m 'not integration' --cov-report term-missing"
+addopts = "--cov-report xml:coverage.xml --cov src.cvx_package_template --cov-fail-under 0 --cov-append -m 'not integration' --cov-report term-missing"
 pythonpath = ["src"]
 log_cli = true
 log_cli_level = "DEBUG"
@@ -122,7 +122,7 @@ fixture-parentheses = false
 mark-parentheses = false
 
 [tool.ruff.lint.isort]
-known-first-party = ["package"]
+known-first-party = ["cvx_package_template"]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 25

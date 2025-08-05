@@ -5,7 +5,7 @@ numpy-style docstrings for documentation generation.
 
 Examples
 --------
->>> from package.hello_world import hello_world, Calculator
+>>> from cvx_package_template.hello_world import hello_world, Calculator
 >>> hello_world()
 'Hello, World!'
 >>> calc = Calculator(10)

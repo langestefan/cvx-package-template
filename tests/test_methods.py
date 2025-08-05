@@ -1,7 +1,11 @@
 """Sample python file for testing functions from the source code."""
 
 import pytest
-from src.package.hello_world import Calculator, calculate_statistics, hello_world
+from src.cvx_package_template.hello_world import (
+    Calculator,
+    calculate_statistics,
+    hello_world,
+)
 
 
 def test_hello() -> None:

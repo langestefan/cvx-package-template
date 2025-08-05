@@ -1,9 +1,9 @@
 ---
-description: My package description goes here.
+description: CVX package template for convex optimization projects.
 keywords: convex optimization, open source, software
 ---
 
-# My Package
+# CVX Package Template
 
 ```{toctree}
 :maxdepth: 1

@@ -9,6 +9,6 @@ from importlib.metadata import version
 
 from .hello_world import Calculator, calculate_statistics, hello_world
 
-__version__ = version("package")
+__version__ = version("cvx-package-template")
 
 __all__ = ["Calculator", "calculate_statistics", "hello_world"]

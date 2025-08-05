@@ -2,8 +2,8 @@
 
 ## Quick Install
 
-Install package using pip:
+Install cvx-package-template using pip:
 
 ```bash
-pip install package
+pip install cvx-package-template
 ```
