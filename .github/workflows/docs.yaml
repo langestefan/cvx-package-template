@@ -35,11 +35,11 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y pandoc
       - name: 🏗 Install dependencies
         run: uv sync --group doc --group doc-test
+      - name: 🚀 Test notebooks
+        run: uv run pytest --nbmake --overwrite -n=auto examples/*ipynb
       - name: 🚀 Build Sphinx docs
         run: >
           uv run sphinx-build -W --keep-going -b html docs/src docs/_build/html
-      - name: 🚀 Test notebooks
-        run: uv run pytest --nbmake --overwrite -n=auto docs/src/examples/*ipynb
       - name: 🏗 Add .nojekyll file
         run: touch docs/.nojekyll
       - name: 🏗 Setup Pages
