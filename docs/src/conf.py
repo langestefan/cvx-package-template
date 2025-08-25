@@ -8,9 +8,8 @@ serve to show the default.
 """
 
 import sys
-from pathlib import Path
-
 import tomllib
+from pathlib import Path
 
 # add the repository root to the Python path so we can import the package
 docs_dir = Path(__file__).parent
@@ -82,6 +81,23 @@ extensions = [
     "myst_parser",
     "nbsphinx",
 ]
+
+# MyST parser configuration
+myst_enable_extensions = [
+    "dollarmath",
+    "amsmath",
+    "deflist",
+    "html_admonition",
+    "html_image",
+    "colon_fence",
+    "smartquotes",
+    "replacements",
+    "substitution",
+    "tasklist",
+]
+
+# enable dollar math for inline and display math
+myst_dmath_double_inline = True
 
 source_suffix = [".md"]
 master_doc = "index"

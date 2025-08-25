@@ -5,6 +5,12 @@ keywords: convex optimization, open source, software
 
 # CVX Package Template
 
+Test some math:
+
+$$
+\min_x \|Ax - b\|_2^2 + \lambda \|x\|_1
+$$
+
 ```{toctree}
 :maxdepth: 1
 :hidden:
